@@ -1,29 +1,25 @@
-# Node.js
-node_modules/
-.env
+# Node modules (ignore in all folders)
+**/node_modules/
 
-# React build and config
-client/node_modules/
-client/.env
-client/build/
+# Environment variables
+.env
+**/.env
+
+# Build outputs (optional)
+dist/
+build/
 
 # Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+logs/
+*.log
 
-# OS/mac related
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Editor configs
+# IDE/editor folders
 .vscode/
-*.swp
+.idea/
 
-# Optional
-*.env.local
-*.env.development.local
-*.env.production.local
-
-# Others
-*.log
+# front virtual env (if any)
+front/
